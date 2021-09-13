@@ -2,7 +2,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #f0f4f0;
+  background-color: #dee7de;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(147, 136, 93, 0.975);
+  background-color: rgba(147, 136, 93, 0.97);
   padding: 1.125em 0;
   margin: 0;
   position: fixed;
@@ -58,12 +58,6 @@ body {
   padding: 1.375em 1.125em;
 }
 
-.omne h1 {
-  color: #323b4a;
-  font-weight: 900;
-  font-style: oblique;
-}
-
 .omne .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,8 +71,8 @@ body {
   letter-spacing: 0.09375em;
   font-weight: 700;
   font-style: italic;
-  background-color: #7d6f73;
-  border: 0.03125em solid #5d5255;
+  background-color: #9b8e92;
+  border: 0.03125em solid #7d6f73;
   padding: 0.9375em;
   -webkit-box-shadow: 0.4375em 0.4375em 0.3125em #323b4a;
           box-shadow: 0.4375em 0.4375em 0.3125em #323b4a;
@@ -99,7 +93,7 @@ body {
           justify-content: baseline;
 }
 
-table {
+.hodiny {
   width: 100%;
   padding: 0.9375em;
   margin-top: 0.9em;
@@ -111,17 +105,90 @@ table {
           box-shadow: 0.35em 0.35em 0.25em #323b4a;
 }
 
-table td {
+.hodiny td {
   height: 1.6em;
   padding: 0.25em 2em 0.25em 1.25em;
 }
 
-table th {
+.hodiny th {
   padding: 0.6em 0;
 }
 
-table td, table th {
-  border: solid 0.1em #5f5558;
+.hodiny td, .hodiny th {
+  border: solid 0.1em #807176;
   background-color: #aea57f;
+}
+
+h1 {
+  color: #323b4a;
+  font-size: 2.625em;
+  text-align: center;
+  text-shadow: 0.04762em 0.02381em 0 #93885d;
+  font-style: italic;
+}
+
+.cennik_cont {
+  margin-top: 3.4375em;
+  padding: 1.375em 1.125em;
+  background-color: #8aafad;
+}
+
+.cennik {
+  padding: 1.375em 0 2.625em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  grid-gap: 0.5em;
+  letter-spacing: 0.09375em;
+  font-style: italic;
+  font-weight: 600;
+  color: #050607;
+}
+
+.cennik .popis {
+  font-weight: 700;
+  color: black;
+}
+
+.cennik .grid_item {
+  padding: 0.9375em 0.75em 0.9375em 1.75em;
+  margin-top: 0.625em;
+  width: 80%;
+  border: 0.15625em solid #746b49;
+  background-color: #93885d;
+  -webkit-box-shadow: 0.4375em 0.4375em 0.75em #323b4a;
+          box-shadow: 0.4375em 0.4375em 0.75em #323b4a;
+}
+
+.cennik .grid_item:nth-child(2n+0) {
+  background-color: #9b8e92;
+  border: 0.15625em solid #837378;
+}
+
+.cennik .cena {
+  color: #323b4a;
+  font-weight: 700;
+  text-shadow: 0 0 0.25em #f0f4f0, 0 0 0.0625em #323b4a;
+}
+
+.ordinacia {
+  padding: 1.375em 1.125em;
+  margin-top: 1.5625em;
+  border: 0.07812em solid #9b8e92;
+  background-color: #93885d;
+}
+
+.ordinacia h1 {
+  color: #f0f4f0;
+}
+
+.popis {
+  font-size: 1.5625em;
+  color: #f0f4f0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+.ordinacia{
+    padding: em(22) em(18);
+    margin-top: em(25);
+    border: em(1.25) solid $color-accent;
+    background-color: $color-accent-sec;
+
+    h1{
+        color: $color-bg-primary;
+        
+    }
+    
+}
+
+.popis{
+    font-size: em(25);
+    color: $color-bg-primary;
+    
+}
