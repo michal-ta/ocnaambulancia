@@ -1,0 +1,66 @@
+.omne{
+    background-color: $color-bg-primary;
+    padding: em(22) em(18);
+    
+
+    h1{
+        color: $color-secondary;
+        font-weight: 900;
+        font-style: oblique;
+    }
+
+    .container{
+        display: flex;
+        padding-right: em(13);
+        width: 55%; 
+    }
+
+    p{
+        width: 80%;
+        letter-spacing: em(1.5);
+        font-weight: 700;
+        font-style: italic;
+        background-color: $color-accent;
+        border: em(0.5) solid darken($color-accent, 12%);
+        padding:em(15);
+        box-shadow: em(7) em(7) em(5) $color-secondary
+    }
+
+    img{
+        width: auto;
+        height: em(300);
+        padding-left: em(55);
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: baseline;
+}
+
+table{
+    width: 100%;
+    padding:em(15);
+    margin-top: em(18, 20);
+    margin-left: em(65);
+    border-collapse: collapse;
+    font-size: em(20);
+    text-align: center;
+    box-shadow: em(7,20) em(7,20) em(5,20) $color-secondary;
+    
+    td{
+        height: em(32, 20);
+        padding: em(4) em(32) em(4) em(20);
+    }
+    th{
+        padding: em(12, 20) 0;
+    }
+    
+    td, th{
+        border: solid em(2 ,20) darken($color-accent ,11%);
+        background-color: lighten($color-accent-sec, 12%);
+
+    }
+}
+
+

@@ -2,8 +2,5 @@
 @import '_mixins.scss';
 @import '_general.scss';
 @import '_header.scss';
+@import '_main.scss';
 
-p{
-    color: $color-primary;
-    font-size: em(32);
-}
