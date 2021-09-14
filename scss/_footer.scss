@@ -1,0 +1,22 @@
+.footer{
+    margin-top: em(3);
+    padding:em(10);
+    display: flex;
+    flex-direction: row;
+    background-color: $color-secondary;
+    justify-content: space-around;
+    align-items: center;
+    color: darken($color-bg-primary, 8%);
+    letter-spacing: em(1.5);
+    font-size: em(13);
+
+    .icons{
+        text-decoration: none;
+        
+        i{
+            color:darken($color-bg-primary, 8%);
+            padding-right: em(15);
+            font-size: em(16);
+        }
+    }
+}

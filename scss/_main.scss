@@ -1,4 +1,4 @@
-.omne{
+#omne{
     background-color: $color-bg-primary;
     padding: em(22) em(18);
 
@@ -15,7 +15,7 @@
         font-style: italic;
         background-color: $color-accent;
         border: em(0.5) solid darken($color-accent, 12%);
-        padding:em(15);
+        padding:em(26);
         box-shadow: em(7) em(7) em(5) $color-secondary
     }
 

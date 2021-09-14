@@ -1,11 +1,11 @@
-.cennik_cont{
+#cennik{
     margin-top: em(55);
     padding: em(22) em(18);
     background-color: lighten($color-primary,5%);
 
 }
 
-.cennik{
+.cennik_cont{
     padding: em(22) 0 em(42) 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
