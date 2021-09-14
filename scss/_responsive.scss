@@ -1,0 +1,128 @@
+@media (max-width:1155px){
+    .hodiny{
+        width: 88%;
+    }
+
+    #omne img{
+        height: em(250);
+        width: auto;
+    }
+}
+ @media (max-width:1000px){
+     .flex{
+         flex-direction: column;
+         align-items: center;
+     }
+        #omne img{
+            height: em(199);
+            width: auto;
+            margin-top: em(35);
+        }
+     .otvaracie_hodiny{
+         width: 100%;
+         
+     }
+ }
+
+ @media (max-width:780px){
+     .container{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .hodiny{
+         width: 78%;
+     }
+
+     #omne img{
+        width: em(180);
+        height: auto;
+        padding-bottom: em(12);
+     }
+
+     .cennik_cont{
+         grid-template-columns: 1fr 1fr;
+         padding-left: em(18) ;
+
+    
+        .grid_item{   
+         width: 80%;
+         padding: em(15) em(12) em(15) em(12);
+         
+
+        }
+     }
+ }
+
+ @media (max-width:470px){
+     .wraper{
+         display: flex;
+     }
+     
+     .navigation{
+         width: 96.2%;
+     }
+
+     .logo{
+         height: em(200);
+         margin-top: em(72);
+     }
+     .hodiny{
+         margin-left: em(43);
+         width: 80%;
+         font-size: em(16);
+     }
+
+    .cennik_cont{
+         grid-template-columns: 1fr;
+         padding-left: em(32) ;
+
+         .popis{
+             font-size: em(16);
+         }
+    }
+
+    .kontakty_cont{
+        grid-template-columns: 1fr;
+        margin-left: em(20);
+    }
+
+    .footer{
+        flex-direction: column;
+        
+        .icons{
+            padding: em(20) 0;
+        }
+    }
+ }
+
+ @media (max-width: 320px){
+
+     #omne img{
+         width: em(120);
+         height: auto;
+     }
+
+     .hodiny{
+         width: 80%;
+         margin: 0 em(17) 0 0;
+     }
+     .cennik_cont{
+        padding: em(5) 0;   
+        
+        p{
+            padding-right: em(22);
+        }
+     }
+     
+     
+     
+     .kontakty_cont{
+        margin: 0;
+        padding: em(5) 0;
+        
+        p{
+            font-size:em(14);
+        }
+    }
+ }

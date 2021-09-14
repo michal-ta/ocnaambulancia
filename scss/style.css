@@ -255,4 +255,129 @@ h1 {
   padding-right: 0.9375em;
   font-size: 1em;
 }
+
+@media (max-width: 1155px) {
+  .hodiny {
+    width: 88%;
+  }
+  #omne img {
+    height: 15.625em;
+    width: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #omne img {
+    height: 12.4375em;
+    width: auto;
+    margin-top: 2.1875em;
+  }
+  .otvaracie_hodiny {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hodiny {
+    width: 78%;
+  }
+  #omne img {
+    width: 11.25em;
+    height: auto;
+    padding-bottom: 0.75em;
+  }
+  .cennik_cont {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-left: 1.125em;
+  }
+  .cennik_cont .grid_item {
+    width: 80%;
+    padding: 0.9375em 0.75em 0.9375em 0.75em;
+  }
+}
+
+@media (max-width: 470px) {
+  .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation {
+    width: 96.2%;
+  }
+  .logo {
+    height: 12.5em;
+    margin-top: 4.5em;
+  }
+  .hodiny {
+    margin-left: 2.6875em;
+    width: 80%;
+    font-size: 1em;
+  }
+  .cennik_cont {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-left: 2em;
+  }
+  .cennik_cont .popis {
+    font-size: 1em;
+  }
+  .kontakty_cont {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-left: 1.25em;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .icons {
+    padding: 1.25em 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #omne img {
+    width: 7.5em;
+    height: auto;
+  }
+  .hodiny {
+    width: 80%;
+    margin: 0 1.0625em 0 0;
+  }
+  .cennik_cont {
+    padding: 0.3125em 0;
+  }
+  .cennik_cont p {
+    padding-right: 1.375em;
+  }
+  .kontakty_cont {
+    margin: 0;
+    padding: 0.3125em 0;
+  }
+  .kontakty_cont p {
+    font-size: 0.875em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
