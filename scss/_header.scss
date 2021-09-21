@@ -1,3 +1,9 @@
+@font-face {
+        font-family: Scriptina;
+        src: url(/fonts/SCRIPTIN.ttf);
+    }
+    
+
 .logo{
     width: 100%;
     height: em(300);
@@ -7,6 +13,9 @@
     display: inline-block;
     margin:em(49) 0 0 0 ;
     padding-bottom: em(2);
+    font-family: Scriptina ,Georgia, 'Times New Roman', Times, sans-serif;
+    
+
 }
 
 .navigation{

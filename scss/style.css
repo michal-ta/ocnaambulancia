@@ -9,6 +9,11 @@ body {
   max-width: 105em;
 }
 
+@font-face {
+  font-family: Scriptina;
+  src: url(/fonts/SCRIPTIN.ttf);
+}
+
 .logo {
   width: 100%;
   height: 18.75em;
@@ -17,6 +22,7 @@ body {
   display: inline-block;
   margin: 3.0625em 0 0 0;
   padding-bottom: 0.125em;
+  font-family: Scriptina ,Georgia, 'Times New Roman', Times, sans-serif;
 }
 
 .navigation {
