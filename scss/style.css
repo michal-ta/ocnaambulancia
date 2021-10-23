@@ -39,8 +39,7 @@ body {
   background-color: rgba(147, 136, 93, 0.97);
   padding: 1.125em 0;
   margin: 0;
-  position: fixed;
-  width: 98.9%;
+  width: 100%;
   top: 0;
   right: 0.5em;
   left: 0.5em;
@@ -257,7 +256,7 @@ h1 {
 }
 
 .footer .icons i {
-  color: #d8e3d8;
+  color: #f0f4f0, 8%;
   padding-right: 0.9375em;
   font-size: 1em;
 }
@@ -294,7 +293,7 @@ h1 {
 
 @media (max-width: 780px) {
   .navigation {
-    width: 96.6%;
+    width: 100%;
   }
   .container {
     -webkit-box-orient: vertical;
@@ -355,7 +354,7 @@ h1 {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    width: 89.2%;
+    width: 100%;
   }
   .navigation:nth-child(-n+2) {
     padding: 1.125em 0 1.125em 1.875em;
