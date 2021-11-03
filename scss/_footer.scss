@@ -14,9 +14,31 @@
         text-decoration: none;
         
         i{
-            color:($color-bg-primary, 8%);
+            color:($color-bg-primary);
             padding-right: em(15);
-            font-size: em(16);
+            font-size: em(22);
+        }
+    }
+}
+
+
+.backtotop{
+    display: flex;
+    position: fixed;
+    margin-top: em(12);
+    padding: em(12);
+    width: 100%;
+    justify-content: center;
+    top:680px;
+
+    .back{
+        font-size: em(22);
+        background-color: transparentize(white, 0.5);
+        padding:em(10);
+        border-radius: 50%;
+
+        i{
+        color: $color-secondary;
         }
     }
 }

@@ -20,7 +20,7 @@ body {
   background-color: #9fbebc;
   text-align: center;
   display: inline-block;
-  margin: 3.0625em 0 0 0;
+  margin: 0;
   padding-bottom: 0.125em;
   font-family: Scriptina ,Georgia, 'Times New Roman', Times, sans-serif;
 }
@@ -256,9 +256,34 @@ h1 {
 }
 
 .footer .icons i {
-  color: #f0f4f0, 8%;
+  color: #f0f4f0;
   padding-right: 0.9375em;
-  font-size: 1em;
+  font-size: 1.375em;
+}
+
+.backtotop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin-top: 0.75em;
+  padding: 0.75em;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 680px;
+}
+
+.backtotop .back {
+  font-size: 1.375em;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.625em;
+  border-radius: 50%;
+}
+
+.backtotop .back i {
+  color: #323b4a;
 }
 
 @media (max-width: 1155px) {
