@@ -29,13 +29,36 @@
     padding: em(12);
     width: 100%;
     justify-content: center;
-    top:680px;
+    top:85%;
+    transition-delay: 2s;
+    
 
     .back{
         font-size: em(22);
         background-color: transparentize(white, 0.5);
         padding:em(10);
         border-radius: 50%;
+        border: em(1) solid $color-primary;
+
+        i{
+        color: $color-secondary;
+        }
+    }
+}
+
+.backtotop2{
+    display: flex;
+    margin-top: em(12);
+    padding: em(12);
+    width: 100%;
+    justify-content: center;
+
+    .back{
+        font-size: em(22);
+        background-color: transparentize(white, 0.5);
+        padding:em(8);
+        border-radius: 50%;
+        border: em(1) solid $color-primary;
 
         i{
         color: $color-secondary;
