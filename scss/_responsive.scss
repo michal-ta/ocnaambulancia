@@ -76,6 +76,22 @@
         margin-left: em(20);
     }
 
+    #omne {
+
+        
+        .container{
+            width: 88%;
+        }
+        .otvaracie_hodiny{
+            width: 88%;
+            font-size: em(13);
+        }
+        .hodiny{
+            margin:em(22) em(0) em(12) em(50);
+        }
+
+    }
+
 }
  @media (max-width:470px){
      .wraper{
@@ -150,6 +166,25 @@
          background-color:darken($color-accent, 35%);
         }
     }
+
+    #omne{
+
+        .flex{
+        align-self: center;
+     }
+     img{
+         width: em(120);
+         height: auto;
+        }
+     .card {
+         line-height: 1.2;
+         font-size: em(16);
+         
+         }
+     .container{
+        width: 82%;
+        }
+    }
 }
         
 
@@ -159,10 +194,11 @@
 
  @media (max-width: 320px){
 
-     #omne img{
-         width: em(120);
-         height: auto;
-     }
+     
+
+    
+
+    
 
      .hodiny{
          width: 80%;

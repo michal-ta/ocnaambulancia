@@ -24,15 +24,13 @@
         height: em(300);
         padding-left: em(55);
     }
-}
-
-.flex{
+    .flex{
     display: flex;
     justify-content: baseline;
 }
 
 .hodiny{
-    width: 100%;
+    width: 80%;
     padding:em(15);
     margin-top: em(18, 20);
     margin-left: em(65);
@@ -64,3 +62,6 @@
         font-style: italic;
     }
     
+}
+
+

@@ -95,7 +95,7 @@ body {
   padding-left: 3.4375em;
 }
 
-.flex {
+#omne .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,8 +104,8 @@ body {
           justify-content: baseline;
 }
 
-.hodiny {
-  width: 100%;
+#omne .hodiny {
+  width: 80%;
   padding: 0.9375em;
   margin-top: 0.9em;
   margin-left: 4.0625em;
@@ -116,21 +116,21 @@ body {
           box-shadow: 0.35em 0.35em 0.25em #323b4a;
 }
 
-.hodiny td {
+#omne .hodiny td {
   height: 1.6em;
   padding: 0.25em 2em 0.25em 1.25em;
 }
 
-.hodiny th {
+#omne .hodiny th {
   padding: 0.6em 0;
 }
 
-.hodiny td, .hodiny th {
+#omne .hodiny td, #omne .hodiny th {
   border: solid 0.1em #807176;
   background-color: #aea57f;
 }
 
-h1 {
+#omne h1 {
   color: #323b4a;
   font-size: 2.625em;
   text-align: center;
@@ -382,6 +382,16 @@ h1 {
         grid-template-columns: 1fr;
     margin-left: 1.25em;
   }
+  #omne .container {
+    width: 88%;
+  }
+  #omne .otvaracie_hodiny {
+    width: 88%;
+    font-size: 0.8125em;
+  }
+  #omne .hodiny {
+    margin: 1.375em 0em 0.75em 3.125em;
+  }
 }
 
 @media (max-width: 470px) {
@@ -462,13 +472,25 @@ h1 {
     z-index: 85;
     background-color: #3f383a;
   }
-}
-
-@media (max-width: 320px) {
+  #omne .flex {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   #omne img {
     width: 7.5em;
     height: auto;
   }
+  #omne .card {
+    line-height: 1.2;
+    font-size: 1em;
+  }
+  #omne .container {
+    width: 82%;
+  }
+}
+
+@media (max-width: 320px) {
   .hodiny {
     width: 80%;
     margin: 0 1.0625em 0 0;
