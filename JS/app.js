@@ -16,18 +16,15 @@ var sipka = document.getElementById("newclass");
 
     }});
 
-    // pokusy ale nefunguje 
-    /*
-     window.addEventListener("scroll", function(){
-         var poloha= document.getElementById("position").offsetTop;
+    var burger=this.document.querySelector(".mobile");
+    var menu= document.querySelector(".menu");
+
+/* window.addEventListener("resize" , function(){
+        if(this.window.innerWidth >470){*/
+      window.addEventListener("click", function(){
             
-            console.log(poloha);
-         if(this.window.pageYOffset >= poloha){
-             console.log("pravda");
-         sipka.style.display="flex";
-         }else{
-              console.log("false");
-            sipka.style.display="none";
-         }
-     });   
-     */
+            burger.classList.toggle("active");
+            menu.classList.toggle("active");
+          
+      }); 
+      

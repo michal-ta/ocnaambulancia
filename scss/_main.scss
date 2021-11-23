@@ -1,3 +1,7 @@
+body{
+    padding:em(12);
+}
+
 #omne{
     background-color: $color-bg-primary;
     padding: em(22) em(18);
@@ -65,3 +69,42 @@
 }
 
 
+.menu{
+    display:none;
+    position:fixed;
+    left:-405px;
+    top:em(62);
+    width: 94.8%;
+    z-index: 85;
+    animation:fadeout;
+    animation:display;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;  
+}
+
+
+.menu.active{
+    display: inline-block;
+    position:fixed;
+    width: 94.8%;
+    top:em(62);
+    left:12px;
+    animation:fadein;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+
+}
+
+.navigation.moving {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        & li{
+            padding: em(8) 0;
+            font-size: em(20);
+            line-height: 1.5;
+        }
+    }
