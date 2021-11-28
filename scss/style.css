@@ -115,7 +115,7 @@ body {
           justify-content: baseline;
 }
 
-#omne .hodiny {
+.hodiny {
   width: 80%;
   padding: 0.9375em;
   margin-top: 0.9em;
@@ -127,21 +127,21 @@ body {
           box-shadow: 0.35em 0.35em 0.25em #323b4a;
 }
 
-#omne .hodiny td {
+.hodiny td {
   height: 1.6em;
   padding: 0.25em 2em 0.25em 1.25em;
 }
 
-#omne .hodiny th {
+.hodiny th {
   padding: 0.6em 0;
 }
 
-#omne .hodiny td, #omne .hodiny th {
+.hodiny td, .hodiny th {
   border: solid 0.1em #807176;
   background-color: #aea57f;
 }
 
-#omne h1 {
+h1 {
   color: #323b4a;
   font-size: 2.625em;
   text-align: center;
@@ -150,20 +150,19 @@ body {
 }
 
 .menu {
-  display: none;
+  display: inline-block;
   position: fixed;
   left: -405px;
   top: 3.875em;
   width: 94.8%;
+  height: 25px;
   z-index: 85;
-  -webkit-animation: fadeout;
-          animation: fadeout;
-  -webkit-animation: display;
-          animation: display;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.navigation.moving {
+  display: inline-block;
 }
 
 .menu.active {
@@ -172,12 +171,6 @@ body {
   width: 94.8%;
   top: 3.875em;
   left: 12px;
-  -webkit-animation: fadein;
-          animation: fadein;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .navigation.moving {

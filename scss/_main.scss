@@ -31,6 +31,7 @@ body{
     .flex{
     display: flex;
     justify-content: baseline;
+    }
 }
 
 .hodiny{
@@ -58,30 +59,31 @@ body{
     }
 }
 
- h1{
+ 
+h1{
         color: $color-secondary;
         font-size: em(42);
         text-align: center;
         text-shadow: em(2, 42) em(1, 42) 0 $color-accent-sec;
         font-style: italic;
     }
-    
-}
 
 
 .menu{
-    display:none;
+    display:inline-block;
     position:fixed;
     left:-405px;
     top:em(62);
     width: 94.8%;
+    height: 25px;
     z-index: 85;
-    animation:fadeout;
-    animation:display;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;  
+    transition: all 0.8s ease-in;
+ 
 }
 
+.navigation.moving{
+    display:inline-block;
+}
 
 .menu.active{
     display: inline-block;
@@ -89,10 +91,7 @@ body{
     width: 94.8%;
     top:em(62);
     left:12px;
-    animation:fadein;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;
-
+   
 }
 
 .navigation.moving {
