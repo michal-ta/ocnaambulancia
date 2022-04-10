@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./scss/style.css">
     <script src="https://kit.fontawesome.com/d41149d6de.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="očná ambulancia, Livia Sedlicka , kosice">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
     
     <title> Livia Sedlická- Očný lekár</title>
 </head>
@@ -25,6 +28,7 @@
             
             </ul> 
             <div class="container_mobile"> 
+                
                 <div  class="mobile ">
                     <a href="#" class="bar bar1"> </a>
                     <a href="#" class="bar bar2"> </a>
@@ -43,7 +47,7 @@
                 </div>  
             </div>  
         </div>
-        <img src="./logo/logo v2.svg" alt="logo" class="logo">
+        <img src="./logo/logo V3 sed med.svg" alt="logo" class="logo">
         
     </nav>
     
@@ -151,8 +155,12 @@
                     </p>
                 </div>
         </div>
+
         
     </article>
+    <aside class="mapa">
+    <div id="map"></div>
+    </aside>
 
     <footer class="footer" >
         <p> Copyright &#169 2021 Michal Takáč  </p>
@@ -173,6 +181,11 @@
         <div class="back">
         <a href="#back"><i class="fas fa-arrow-up"></i></a></div>
     </div>
+
+
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 
 <script src="./JS/app.js"></script>
 <!-- Code injected by live-server -->

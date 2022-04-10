@@ -70,9 +70,9 @@ h1{
 
 
 .menu{
-    display:inline-block;
+    display:none;
     position:fixed;
-    left:-405px;
+    right:-20px;
     top:em(62);
     width: 94.8%;
     height: 25px;
@@ -90,7 +90,7 @@ h1{
     position:fixed;
     width: 94.8%;
     top:em(62);
-    left:12px;
+    transform: translateX(-29px);
    
 }
 
