@@ -345,6 +345,27 @@ h1 {
   font-size: 1.375em;
 }
 
+.poznamka {
+  margin-top: 0;
+  padding: 0.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #101718;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d8e3d8;
+  letter-spacing: 0.09375em;
+  font-size: 0.625em;
+}
+
 .backtotop {
   display: -webkit-box;
   display: -ms-flexbox;
