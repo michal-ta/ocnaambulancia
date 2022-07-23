@@ -8,37 +8,48 @@
 .cennik_cont{
     padding: em(22) 0 em(42) 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
     flex-direction: row;
-    grid-gap: em(8);
+    justify-items: center;
+    grid-gap: em(15);
     letter-spacing: em(1.5);
     font-style: italic;
     font-weight: 600;
     color: darken($color-secondary , 22%);
     
-    .popis{
-        font-weight: 700;
-        color: darken($color-secondary , 28%);
-    }
+    
 
     .grid_item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: em(15) em(12) em(15) em(28);
         margin-top: em(10);
         width: 80%;
+        height: 100%;
         border: em(2.5) solid darken($color-accent-sec , 10%);
-        background-color: lighten($color-accent-sec,8%);
-        box-shadow: em(1) em(1) em(5) $color-secondary ;
+        background-color: lighten($color-accent-sec,25%);
+        box-shadow: em(1) em(1) em(1) $color-secondary ;
+        border-radius: em(4);
+
 
         &:nth-child(2n+0){
-            background-color: lighten($color-accent,8%);
+            background-color: lighten($color-accent,25%);
             border: em(2.5) solid darken($color-accent , 10%);
         }
     }
+        .popis {
+            font-weight: 800;
+            font-size: em(19);
+            color: darken($color-secondary , 28%);
+            max-height: 70%;
+        }
 
     .cena{
         color: $color-secondary;
+        padding-right: em(25);
         font-weight: 700;
-        text-shadow: 0 0 em(4) $color-bg-primary, 0 0 em(1) $color-secondary;
+        font-size: em(20);
     }
 }
 

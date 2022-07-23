@@ -76,6 +76,7 @@ body {
 
 body {
   padding: 0.75em;
+  font-size: 100%;
 }
 
 #omne {
@@ -210,43 +211,58 @@ h1 {
   padding: 1.375em 0 2.625em 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  grid-gap: 0.5em;
+  justify-items: center;
+  grid-gap: 0.9375em;
   letter-spacing: 0.09375em;
   font-style: italic;
   font-weight: 600;
   color: black;
 }
 
-.cennik_cont .popis {
-  font-weight: 700;
-  color: black;
-}
-
 .cennik_cont .grid_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.9375em 0.75em 0.9375em 1.75em;
   margin-top: 0.625em;
   width: 80%;
+  height: 100%;
   border: 0.15625em solid #32423c;
-  background-color: #5a766c;
-  -webkit-box-shadow: 0.0625em 0.0625em 0.3125em #101718;
-          box-shadow: 0.0625em 0.0625em 0.3125em #101718;
+  background-color: #84a298;
+  -webkit-box-shadow: 0.0625em 0.0625em 0.0625em #101718;
+          box-shadow: 0.0625em 0.0625em 0.0625em #101718;
+  border-radius: 0.25em;
 }
 
 .cennik_cont .grid_item:nth-child(2n+0) {
-  background-color: #6991a3;
+  background-color: #9eb8c4;
   border: 0.15625em solid #43606d;
+}
+
+.cennik_cont .popis {
+  font-weight: 800;
+  font-size: 1.1875em;
+  color: black;
+  max-height: 70%;
 }
 
 .cennik_cont .cena {
   color: #101718;
+  padding-right: 1.5625em;
   font-weight: 700;
-  text-shadow: 0 0 0.25em #f0f4f0, 0 0 0.0625em #101718;
+  font-size: 1.25em;
 }
 
 #ordinacia {
