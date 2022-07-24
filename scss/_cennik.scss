@@ -17,6 +17,7 @@
     font-weight: 600;
     color: darken($color-secondary , 22%);
     
+
     
 
     .grid_item{
@@ -53,3 +54,13 @@
     }
 }
 
+.basicinfo{
+    font-style: normal;
+    font-size: em(22);
+    width: 78%;
+
+    strong{
+        color: darken($color-primary,38%);
+        font-style: italic;
+    }
+}

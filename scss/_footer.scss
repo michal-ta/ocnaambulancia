@@ -37,18 +37,19 @@
 .backtotop{
     display: flex;
     position: fixed;
-    margin-top: em(12);
-    padding: em(12);
+    margin: em(12) em(32) 0 0;
+    padding: em(8);
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     bottom: em(25);
+    right: em(25);
     transition: all 0.5s ease;
     
 
     .back{
-        font-size: em(22);
+        font-size: em(18);
         background-color: transparentize(lightgray, 0.5);
-        padding:em(10);
+        padding:em(8);
         border-radius: 50%;
         border: em(1) solid $color-primary;
         transition: all 0.5s ease-in;
