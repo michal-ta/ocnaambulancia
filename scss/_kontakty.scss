@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: em(22) 0 em(42) 0;
+    justify-items: center;
 
     .grid_item{
         padding: em(15) em(12) em(15) em(28);
