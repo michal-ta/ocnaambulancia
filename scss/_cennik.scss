@@ -58,15 +58,18 @@
             font-weight: 800;
             font-size: em(19);
             color: darken($color-secondary , 28%);
-            max-height: 70%;
+            max-height: 80%;
         }
 
     .cena{
         color: $color-secondary;
-        padding-right: em(25);
+        padding-right: em(18);
+        padding-left: em(10);
         font-weight: 700;
         font-size: em(20);
     }
+
+
 }
 
 .basicinfo{

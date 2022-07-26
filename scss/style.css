@@ -148,7 +148,7 @@ body {
 }
 
 .hodiny {
-  max-width: 100%;
+  min-width: 90%;
   padding: 1.25em;
   border-collapse: collapse;
   font-size: 1.25em;
@@ -304,12 +304,13 @@ h1 {
   font-weight: 800;
   font-size: 1.1875em;
   color: black;
-  max-height: 70%;
+  max-height: 80%;
 }
 
 .cennik_cont .cena {
   color: #101718;
-  padding-right: 1.5625em;
+  padding-right: 1.125em;
+  padding-left: 0.625em;
   font-weight: 700;
   font-size: 1.25em;
 }
@@ -515,7 +516,7 @@ h1 {
     transition: all 0.55s ease-in;
   }
   #omne img {
-    height: 15.625em;
+    height: 14.25em;
     width: auto;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -555,10 +556,12 @@ h1 {
   .otvaracie_hodiny {
     width: 100%;
     display: inline-block;
-    text-align: center;
+  }
+  .hodiny {
+    width: 100%;
   }
   #omne img {
-    width: 17.5em;
+    width: 25em;
     height: auto;
     padding-bottom: 0.75em;
   }
@@ -571,12 +574,37 @@ h1 {
     padding-left: 1.125em;
   }
   .cennik_cont .grid_item {
-    width: 80%;
-    padding: 0.9375em 0.75em 0.9375em 0.75em;
+    width: 90%;
+    height: 100%;
+  }
+  .cennik_cont .cena {
+    font-size: 1.125em;
+    padding-left: 0.25em;
+  }
+  .footer {
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+  * {
+    padding: 0.3125em 0;
   }
 }
 
 @media (max-width: 650px) {
+  .kontakty_cont {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-left: 1.25em;
+  }
   #omne.card {
     width: 95%;
   }
@@ -589,14 +617,47 @@ h1 {
   .footer .icons {
     padding: 1.25em 0;
   }
+  #cennik {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cennik_cont {
+    width: 100%;
+  }
+  .cennik_cont .descr {
+    width: 98%;
+  }
+  .cennik_cont .grid_item {
+    width: 95%;
+    font-size: 0.9375em;
+  }
+  .cennik_cont .cena {
+    font-size: 1.125em;
+    padding-left: 0.25em;
+  }
+  .poznamka {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .poznamka p {
+    width: 60%;
+  }
 }
 
 @media (max-width: 600px) {
-  .kontakty_cont {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    margin-left: 1.25em;
-  }
   #omne.card {
     width: 95%;
   }
@@ -607,8 +668,14 @@ h1 {
     width: 88%;
     font-size: 0.8125em;
   }
-  #omne .hodiny {
-    margin: 1.375em 0em 0.75em 3.125em;
+  #omne .grid_item {
+    height: 120%;
+    padding-top: 0.125em;
+  }
+  #omne .cennik_cont .popis {
+    height: 100%;
+    width: 80%;
+    font-size: 0.75em;
   }
 }
 

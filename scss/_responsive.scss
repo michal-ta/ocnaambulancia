@@ -30,7 +30,7 @@
     }
 
     #omne img{
-        height: em(250);
+        height: em(228);
         width: auto;
         grid-row: 2/3;
         grid-column: 1/2;
@@ -62,10 +62,13 @@
     .otvaracie_hodiny{
         width: 100%;
         display: inline-block;
-        text-align: center;
+    }
+
+    .hodiny{
+        width: 100%;
     }
     #omne img{
-        width: em(280);
+        width: em(400);
         height: auto;
         padding-bottom: em(12);
 
@@ -80,14 +83,32 @@
 
     
         .grid_item{   
-        width: 80%;
-        padding: em(15) em(12) em(15) em(12);
+        width: 90%;
+        height: 100%;
         }
+
+        .cena {
+            font-size: em(18);
+            padding-left: em(4);
+        }
+    }
+
+    .footer{
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: space-around;
+    }
+    & *{
+        padding: em(5) 0;
     }
 }
 
 @media (max-width:650px){
-
+    .kontakty_cont{
+        grid-template-columns: 1fr;
+        margin-left: em(20);
+    }
         #omne.card{
             width: 95%;
         }
@@ -99,13 +120,43 @@
             padding: em(20) 0;
         }
     }
+    #cennik{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cennik_cont{
+        width: 100%;
+
+        .descr{
+            width: 98%;
+        }
+        .grid_item{
+            width: 95%;
+            font-size: em(15);
+        }
+        .cena {
+            font-size: em(18);
+            padding-left: em(4);
+        }
+    }
+
+    .poznamka{
+        width: 100%;
+        justify-content: center;
+
+        p{
+            width: 60%;
+        }
+    }
 }
 
 @media (max-width:600px){
-    .kontakty_cont{
-        grid-template-columns: 1fr;
-        margin-left: em(20);
-    }
+    
 
     #omne {
 
@@ -119,9 +170,18 @@
             width: 88%;
             font-size: em(13);
         }
-        .hodiny{
-            margin:em(22) em(0) em(12) em(50);
+        .grid_item{
+            height: 120%;
+            padding-top: em(2);
+
+            
         }
+        .cennik_cont .popis{
+                height: 100%;
+                width: 80%;
+                font-size: em(12);
+            }
+        
 
     }
 
