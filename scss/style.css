@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  max-width: 99vw;
+  width: 99vw;
   max-height: 100vh;
 }
 
@@ -30,8 +30,8 @@ body {
 .wraper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.25fr 3fr;
-      grid-template-columns: 0.25fr 3fr;
+  -ms-grid-columns: 0.5fr 3fr;
+      grid-template-columns: 0.5fr 3fr;
 }
 
 .navigation {
@@ -532,6 +532,13 @@ h1 {
   }
 }
 
+@media (max-width: 1048px) {
+  .wraper {
+    -ms-grid-columns: 0.7fr 3fr;
+        grid-template-columns: 0.7fr 3fr;
+  }
+}
+
 @media (max-width: 825px) {
   * {
     padding: 0;
@@ -679,41 +686,40 @@ h1 {
   }
 }
 
-@media (max-width: 470px) {
-  .wraper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: 570px) {
+  .hodiny {
+    width: 100%;
+    font-size: 1em;
+  }
+  .navigation {
+    display: none;
   }
   .logo {
-    height: 12.5em;
-    margin-top: 4.5em;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
-  }
-  .hodiny {
-    margin-left: 2.6875em;
-    width: 80%;
-    font-size: 1em;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -webkit-transform: translateY(2.5em);
+            transform: translateY(2.5em);
   }
   .cennik_cont {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding-left: 2em;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .cennik_cont .popis {
     font-size: 1em;
   }
-  #back {
+  .back #back {
     display: none;
   }
   #newclass {
     display: none;
   }
-  img.logo {
-    margin-top: 3.75em;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+  .wraper {
+    width: 100%;
   }
   .container_mobile {
     border: 1px solid #567c8d;
@@ -724,6 +730,7 @@ h1 {
     position: fixed;
     background-color: rgba(72, 95, 87, 0.5);
     z-index: 85;
+    top: 0;
   }
   .mobile {
     height: 100%;
@@ -800,13 +807,25 @@ h1 {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+  #omne {
+    width: 100%;
+  }
   #omne .flex {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #omne .flex .otvaracie_hodiny {
+    width: 100%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #omne .flex .hodiny {
+    width: 100%;
   }
   #omne img {
-    width: 7.5em;
+    width: 50%;
     height: auto;
   }
   #omne .card {
