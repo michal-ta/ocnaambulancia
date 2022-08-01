@@ -2,6 +2,7 @@ let arrowBack = document.querySelector(".backtotop");
 let burger=document.getElementById("mobile_menu");
 let menu= document.getElementById("rolling_menu");
 let navigationMuv=this.document.querySelector(".navigation.moving");
+let burgerLink=document.querySelector(".link");
 
  //mapa -------------leaflet JS 
 var map = L.map('map').setView([48.739580049, 21.282953024], 17);
@@ -34,6 +35,9 @@ burger.addEventListener("click", function(){
         }
 });
 
+link.addEventListener("click", function(){
+    menu.classList.toggle("not_rolled");
+})
 
 
 
