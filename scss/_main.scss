@@ -85,27 +85,10 @@ h1{
     }
 
 
-.menu{
-    display:none;
-    position:fixed;
-    right:-20px;
-    top:em(62);
-    width: 94.8%;
-    height: 25px;
-    z-index: 85;
-    transition: all 0.8s ease-in;
-}
+
 
 .navigation.moving{
     display:inline-block;
-}
-
-.menu.active{
-    display: inline-block;
-    position:fixed;
-    width: 94.8%;
-    top:em(62);
-    transform: translateX(-29px);
 }
 
 .navigation.moving {

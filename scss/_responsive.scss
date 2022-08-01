@@ -199,9 +199,9 @@
 @media (max-width:570px){
 
     
-    .card{
-        height: 100%;
-    }
+        .card{
+            height: 100%;
+        }
     .hodiny{
             width: 100%;
         font-size: em(16);
@@ -247,11 +247,7 @@
         background-color: transparentize($color-accent-sec,0.5);
         z-index: 85;
         top: 0;
-
-        
         }
-
-    }
 
     .mobile{
     display: flex;
@@ -298,13 +294,13 @@
         }
 
         &.active .bar1{
-            transform: rotateZ(45deg) translateY(em(6)) translateX(em(6));
+            transform: rotateZ(45deg) translateY(em(4.5)) translateX(em(6));
             position: relative;
             top: em(0);
             transition: all 0.5s ease-in-out;
         }
         &.active .bar3{
-            transform: rotateZ(-45deg) translateY(em(-1));
+            transform: rotateZ(-45deg) translateY(em(-3.12)) translateX(em(6.25));
             position: relative;
             bottom: em(20);
             transition: all 0.5s ease-in-out;
@@ -313,6 +309,56 @@
 
     }
 
+    .menu{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 500;
+    background-color: transparentize($color-accent-sec,0.15);
+    height:90vh;
+    width: 100%;
+    transform: translateY(em(62));
+    transition: all ease-in-out 0.38s;
+    
+    &.not_rolled{
+        transform: translateY(-1250px)
+    }  
+
+    div{
+        width: 100%;
+    }
+    
+    a{
+        list-style: none;
+        padding: em(10) 0;
+        margin: em(15) 0;
+        border-bottom: em(1,20) solid darken($color-accent,25%);
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: em(20);
+        font-weight: 900;
+        color:$color-bg-primary;
+
+        &:hover,&:focus,&:active{
+            color: darken($color-bg-primary,38%);
+            
+        }
+    }
+
+    }
+
+    #map{
+        position: relative;
+        z-index: -5;
+        height: em(320);
+        width: em(320);
+    }
 
     #omne{
         width: 100%;
@@ -358,7 +404,7 @@
     }
     
 
-
+}
     
     
 
