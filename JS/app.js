@@ -1,5 +1,5 @@
 var arrowBack = document.querySelector(".backtotop");
-var burger=document.querySelector(".mobile");
+var burger=document.getElementById("mobile_menu");
 var menu= document.querySelector(".menu");
 var navigationMuv=this.document.querySelector(".navigation.moving");
 
@@ -15,18 +15,24 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
 
 
 //-- showing  of back arrow after scroll down  , 
-(function changearow(){
-    let scroling =document.addEventListener("scroll",function(){
-        var scrollPosition =window.scrollY;
+
+        window.addEventListener("resize" ,function(){
+        if(this.window.innerWidth < "570"){
+            arrowBack.style.display="none"
+        }
         
     });
 
-    let resizing=window.addEventListener("resize" ,function(){
-        var actualWidth=window.innerWidth;
-        
-    });
 
-}());
+
+// burger menu ------
+burger.addEventListener("click", function(){
+        burger.classList.toggle("active")
+
+});
+    
+
+
 /*if (scrollPosition <=850){
     arrowBack.style.display="none"
 }else{
@@ -35,7 +41,7 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
 
 // change to dont show arrow in mobile version 
 
- /*   if(this.innerWidth <=570){
+/*   if(this.innerWidth <=570){
         arrowBack.style.display="none"
     }else{
         arrowBack.style.display="flex"

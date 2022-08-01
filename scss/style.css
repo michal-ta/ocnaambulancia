@@ -90,7 +90,7 @@ body {
   background-color: #f0f4f0;
   padding: 1.375em 1.125em;
   max-width: 100%;
-  min-height: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,6 +494,9 @@ h1 {
     row-gap: 1.5625em;
     justify-items: center;
   }
+  .container_mobile {
+    display: none;
+  }
   .container {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -734,120 +737,142 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     width: 94.8%;
+    min-height: 4.375em;
     position: fixed;
     background-color: rgba(72, 95, 87, 0.5);
     z-index: 85;
     top: 0;
   }
-  .mobile {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    width: 100%;
-    padding: 0.75em 0;
+}
+
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding: 0.75em 0;
+}
+
+.mobile:focus, .mobile:hover {
+  cursor: pointer;
+}
+
+.mobile .bar {
+  display: inline-block;
+  width: 5em;
+  font-size: 0.5em;
+  margin: 0.375em 1.375em 0.1375em 0;
+  z-index: 85;
+  background-color: #121a1e;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile.active {
+  padding: 16px 0;
+}
+
+@-webkit-keyframes op {
+  0% {
+    opacity: 1;
   }
-  .mobile:focus, .mobile:hover {
-    cursor: pointer;
+  50% {
+    opacity: 0.5;
   }
-  .mobile .bar {
-    width: 2.0625em;
-    height: 0.25em;
-    margin: 0.25em 1.375em 0.1375em 0;
-    z-index: 85;
-    background-color: #121a1e;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .mobile.active {
-    padding: 18px 0;
-  }
-  @-webkit-keyframes op {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes op {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .mobile.active .bar2 {
+  100% {
     opacity: 0;
-    -webkit-animation-name: op;
-            animation-name: op;
-    -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
   }
-  .mobile.active .bar1 {
-    -webkit-transform: rotateZ(45deg);
-            transform: rotateZ(45deg);
-    position: relative;
-    top: 0em;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+}
+
+@keyframes op {
+  0% {
+    opacity: 1;
   }
-  .mobile.active .bar3 {
-    -webkit-transform: rotateZ(-45deg);
-            transform: rotateZ(-45deg);
-    position: relative;
-    bottom: 1.25em;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  50% {
+    opacity: 0.5;
   }
-  #omne {
-    width: 100%;
-    height: 100%;
+  100% {
+    opacity: 0;
   }
-  #omne .container {
-    height: 100%;
-  }
-  #omne .flex {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  #omne .otvaracie_hodiny {
-    width: 100%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  #omne .hodiny {
-    width: 100%;
-  }
-  #omne img {
-    width: 50%;
-    height: auto;
-  }
-  #omne .card {
-    line-height: 1.2;
-    font-size: 1em;
-  }
-  #omne .container {
-    width: 82%;
-    height: 100%;
-  }
+}
+
+.mobile.active .bar2 {
+  opacity: 0;
+  -webkit-animation-name: op;
+          animation-name: op;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+}
+
+.mobile.active .bar1 {
+  -webkit-transform: rotateZ(45deg) translateY(0.375em) translateX(0.375em);
+          transform: rotateZ(45deg) translateY(0.375em) translateX(0.375em);
+  position: relative;
+  top: 0em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile.active .bar3 {
+  -webkit-transform: rotateZ(-45deg) translateY(-0.0625em);
+          transform: rotateZ(-45deg) translateY(-0.0625em);
+  position: relative;
+  bottom: 1.25em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#omne {
+  width: 100%;
+  height: 100%;
+}
+
+#omne .container {
+  height: 100%;
+}
+
+#omne .flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#omne .otvaracie_hodiny {
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#omne .hodiny {
+  width: 100%;
+}
+
+#omne img {
+  width: 50%;
+  height: 50%;
+}
+
+#omne .card {
+  line-height: 1.2;
+  font-size: 1em;
+}
+
+#omne .container {
+  width: 82%;
+  height: 100%;
 }
 
 @media (max-width: 320px) {
