@@ -754,7 +754,7 @@ h1 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 100%;
+    width: 98%;
     min-height: 4.375em;
     position: fixed;
     z-index: 85;
@@ -792,30 +792,6 @@ h1 {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  .mobile.active {
-    padding: 16px 0;
-  }
-  .mobile.active .bar2 {
-    display: none;
-    -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
-  }
-  .mobile.active .bar1 {
-    -webkit-transform: rotateZ(45deg) translateX(0.0625em);
-            transform: rotateZ(45deg) translateX(0.0625em);
-    position: relative;
-    top: 0em;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .mobile.active .bar3 {
-    -webkit-transform: rotateZ(-45deg) translateY(0.125em);
-            transform: rotateZ(-45deg) translateY(0.125em);
-    position: relative;
-    bottom: 1.25em;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -837,8 +813,8 @@ h1 {
     top: 0.125em;
     z-index: 500;
     background-color: rgba(72, 95, 87, 0.85);
-    height: 100vh;
-    width: 90%;
+    height: 80vh;
+    width: 95%;
     -webkit-transform: translateY(3.875em);
             transform: translateY(3.875em);
     -webkit-transition: all ease-in-out 0.38s;

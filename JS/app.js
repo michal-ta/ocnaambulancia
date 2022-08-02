@@ -31,7 +31,7 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
 // burger menu ------
 
 function rollingmenu(){
-    if(burger.classList="mobile active "){
+    if(burger.classList="mobile pseudo"){
         menu.classList.toggle("not_rolled");
     }};
 
@@ -40,9 +40,9 @@ function rollingmenu(){
     });
     
 burger.addEventListener("click", function(){
-        burger.classList.toggle("active");
-        rollingmenu()
         
+        burger.classList.toggle("actived");
+        rollingmenu()  
 });
 
 
