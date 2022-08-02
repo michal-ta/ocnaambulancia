@@ -735,24 +735,36 @@ h1 {
     display: none;
   }
   .wraper {
-    width: 100%;
-  }
-  .container_mobile {
-    border: 1px solid #567c8d;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 98%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
     min-height: 4.375em;
     position: fixed;
-    background-color: rgba(72, 95, 87, 0.5);
     z-index: 85;
     top: 0;
-    left: 0;
+    right: 0;
     margin: 0.75em;
-    padding-right: 0.5em;
   }
   .mobile {
+    margin: 0;
+    padding: 0.75em 0.375em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -761,20 +773,20 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    width: 100%;
-    padding: 0.75em 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 13%;
+    background-color: rgba(72, 95, 87, 0.5);
   }
   .mobile:focus, .mobile:hover {
     cursor: pointer;
   }
   .mobile .bar {
     display: inline-block;
-    width: 5em;
+    width: 3em;
     font-size: 0.5em;
-    margin: 0.375em 1.375em 0.1375em 0;
+    margin: 0.375em 1.375em 0.125em 1.375em;
     z-index: 85;
     background-color: #121a1e;
     -webkit-transition: all 0.5s ease-in-out;
@@ -783,46 +795,22 @@ h1 {
   .mobile.active {
     padding: 16px 0;
   }
-  @-webkit-keyframes op {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes op {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
   .mobile.active .bar2 {
-    opacity: 0;
-    -webkit-animation-name: op;
-            animation-name: op;
+    display: none;
     -webkit-animation-duration: 0.25s;
             animation-duration: 0.25s;
   }
   .mobile.active .bar1 {
-    -webkit-transform: rotateZ(45deg) translateY(0.28125em) translateX(0.375em);
-            transform: rotateZ(45deg) translateY(0.28125em) translateX(0.375em);
+    -webkit-transform: rotateZ(45deg) translateX(0.0625em);
+            transform: rotateZ(45deg) translateX(0.0625em);
     position: relative;
     top: 0em;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .mobile.active .bar3 {
-    -webkit-transform: rotateZ(-45deg) translateY(-0.195em) translateX(0.39062em);
-            transform: rotateZ(-45deg) translateY(-0.195em) translateX(0.39062em);
+    -webkit-transform: rotateZ(-45deg) translateY(0.125em);
+            transform: rotateZ(-45deg) translateY(0.125em);
     position: relative;
     bottom: 1.25em;
     -webkit-transition: all 0.5s ease-in-out;
@@ -846,10 +834,11 @@ h1 {
     position: absolute;
     padding: 0;
     margin: 0;
+    top: 0.125em;
     z-index: 500;
     background-color: rgba(72, 95, 87, 0.85);
-    height: 90vh;
-    width: 100%;
+    height: 100vh;
+    width: 90%;
     -webkit-transform: translateY(3.875em);
             transform: translateY(3.875em);
     -webkit-transition: all ease-in-out 0.38s;

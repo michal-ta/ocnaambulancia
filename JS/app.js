@@ -2,7 +2,7 @@ let arrowBack = document.querySelector(".backtotop");
 let burger=document.getElementById("mobile_menu");
 let menu= document.getElementById("rolling_menu");
 let navigationMuv=this.document.querySelector(".navigation.moving");
-let burgerLink=document.querySelector(".link");
+
 
  //mapa -------------leaflet JS 
 var map = L.map('map').setView([48.739580049, 21.282953024], 17);
@@ -17,7 +17,6 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
 
 //-- showing  of back arrow after scroll down  , 
 
-        
 
     window.addEventListener("scroll" ,function(){
         if(this.window.innerWidth< "570"){
@@ -30,17 +29,23 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
     })
 
 // burger menu ------
+
+function rollingmenu(){
+    if(burger.classList="mobile active "){
+        menu.classList.toggle("not_rolled");
+    }};
+
+    menu.addEventListener("click" , function(){
+        rollingmenu()
+    });
+    
 burger.addEventListener("click", function(){
         burger.classList.toggle("active");
-        //show rolling menu 
-        if(burger.classList="mobile active "){
-            menu.classList.toggle("not_rolled");
-        }
+        rollingmenu()
+        
 });
 
-burgerLink.addEventListener("click", function(){
-    menu.classList.toggle("not_rolled");
-})
+
 
 
 

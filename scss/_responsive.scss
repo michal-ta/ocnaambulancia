@@ -236,29 +236,32 @@
 
 
     .wraper{
-        width: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
     }
     .container_mobile{
-        border: 1px solid $color-accent;
         display: flex;
-        width: 98%;
+        align-items:center;
+        justify-content: flex-end;
+        width: 100%;
         min-height: em(70);
         position: fixed;
-        background-color: transparentize($color-accent-sec,0.5);
         z-index: 85;
         top:0;
-        left:0;
+        right:0;
         margin:em(12);
-        padding-right: em(8);
         }
 
     .mobile{
+    margin: 0;
+    padding: em(12) em(6);
     display: flex;
     height: 100%;
     flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    padding: em(12) 0;
+    align-items: center;
+    width: 13%;
+    background-color: transparentize($color-accent-sec,0.5);
 
     
 
@@ -270,9 +273,9 @@
         
         .bar{ 
         display: inline-block;
-        width: em(50,10);
+        width: em(30,10);
         font-size: em(8);
-        margin: em(6) em(22) em(2.2) 0;
+        margin: em(6) em(22) em(2) em(22);
         z-index: 85;
         background-color:darken($color-accent, 35%);
         transition: all 0.5s ease-in-out;
@@ -283,27 +286,22 @@
             padding: 16px 0;
         }
 
-        @keyframes op {
-            0% {opacity:1}
-            50% {opacity: 0.5}
-            100% {opacity:0}
-            }
+        
 
         &.active .bar2{
-            opacity: 0;
-            animation-name: op;
+            display: none;
             animation-duration:0.25s;
             
         }
 
         &.active .bar1{
-            transform: rotateZ(45deg) translateY(em(4.5)) translateX(em(6));
+            transform: rotateZ(45deg) translateX(em(1));
             position: relative;
             top: em(0);
             transition: all 0.5s ease-in-out;
         }
         &.active .bar3{
-            transform: rotateZ(-45deg) translateY(em(-3.12)) translateX(em(6.25));
+            transform: rotateZ(-45deg) translateY(em(2));
             position: relative;
             bottom: em(20);
             transition: all 0.5s ease-in-out;
@@ -321,10 +319,11 @@
     position:absolute;
     padding: 0;
     margin: 0;
+    top:em(2);
     z-index: 500;
     background-color: transparentize($color-accent-sec,0.15);
-    height:90vh;
-    width: 100%;
+    height:100vh;
+    width: 90%;
     transform: translateY(em(62));
     transition: all ease-in-out 0.38s;
     
