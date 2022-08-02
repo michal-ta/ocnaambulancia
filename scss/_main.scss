@@ -11,10 +11,28 @@
     align-items: center;
     flex-wrap: nowrap;
 
+    
     .container{
+        position: relative;
         display: flex;
         width: 90%; 
         max-height:237px;
+        z-index: 20;
+
+        &::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            height: em(200);
+            width: em(200);
+            border-radius: 60%;
+            background-color:darken($color-accent,5%);
+            z-index: -2;
+            top: em(80);
+            left: em(-12);
+            filter: blur(72px);
+        }
+    
     }
 
     p{

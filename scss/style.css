@@ -117,11 +117,28 @@ nav {
 }
 
 #omne .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 90%;
   max-height: 237px;
+  z-index: 20;
+}
+
+#omne .container::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 12.5em;
+  width: 12.5em;
+  border-radius: 60%;
+  background-color: #4c6e7d;
+  z-index: -2;
+  top: 5em;
+  left: -0.75em;
+  -webkit-filter: blur(72px);
+          filter: blur(72px);
 }
 
 #omne p {
@@ -225,7 +242,7 @@ h1 {
 #cennik {
   margin-top: 3.4375em;
   padding: 1.375em 1.125em;
-  background-color: #8aafad;
+  background-color: #b2cac8;
 }
 
 .descr {
@@ -325,7 +342,7 @@ h1 {
   padding: 1.375em 1.125em;
   margin-top: 1.5625em;
   border: 0.07812em solid #567c8d;
-  background-color: #485f57;
+  background-color: #8aafad;
 }
 
 #ordinacia h1 {
@@ -397,7 +414,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #101718;
+  background-color: #283a3d;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -428,7 +445,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #101718;
+  background-color: #283a3d;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -452,6 +469,7 @@ h1 {
   right: 1.5625em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 500;
 }
 
 .backtotop .back {

@@ -3,7 +3,7 @@
     padding:em(10);
     display: flex;
     flex-direction: row;
-    background-color: $color-secondary;
+    background-color: lighten($color-secondary,12%);
     justify-content: space-around;
     align-items: center;
     color: darken($color-bg-primary, 8%);
@@ -27,7 +27,7 @@
     padding:em(10);
     display: flex;
     flex-direction: row;
-    background-color: $color-secondary;
+    background-color: lighten($color-secondary,12%);
     justify-content: space-around;
     align-items: center;
     color: darken($color-bg-primary, 8%);
@@ -44,6 +44,7 @@
     bottom: em(25);
     right: em(25);
     transition: all 0.5s ease;
+    z-index: 500;
     
 
     .back{

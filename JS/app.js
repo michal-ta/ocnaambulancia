@@ -17,14 +17,17 @@ L.marker([48.739580049, 21.282953024]).addTo(map);
 
 //-- showing  of back arrow after scroll down  , 
 
-        window.addEventListener("resize" ,function(){
-        if(this.window.innerWidth < "570"){
-            arrowBack.style.display="none"
-        }
         
-    });
 
-
+    window.addEventListener("scroll" ,function(){
+        if(this.window.innerWidth< "570"){
+            arrowBack.style.display="none";
+        }else if(this.window.scrollY> "800"){
+            arrowBack.style.display="flex";
+        }else{
+            arrowBack.style.display="none";
+        }
+    })
 
 // burger menu ------
 burger.addEventListener("click", function(){
@@ -35,7 +38,7 @@ burger.addEventListener("click", function(){
         }
 });
 
-link.addEventListener("click", function(){
+burgerLink.addEventListener("click", function(){
     menu.classList.toggle("not_rolled");
 })
 
