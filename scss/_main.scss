@@ -16,7 +16,6 @@
         position: relative;
         display: flex;
         width: 90%; 
-        max-height:237px;
         z-index: 20;
 
         &::after{
@@ -40,9 +39,8 @@
         letter-spacing: em(1.5);
         font-weight: 700;
         font-style: italic;
-        background-color: $color-accent;
-        border: em(0.5) solid darken($color-accent, 12%);
-        padding:em(26);
+        background-color: #789fad;
+        padding:em(24);
         box-shadow: em(2, 20) em(2, 20) em(2, 20) lighten($color-secondary, 25%);
     }
 
@@ -61,6 +59,7 @@
     justify-content: space-around;
     max-width: 100%;
     min-height: em(400);
+    margin-top: em(65);
 }
 
 .otvaracie_hodiny{

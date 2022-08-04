@@ -63,6 +63,8 @@
         flex-direction: column;
         justify-items: center;
         align-items: center;
+        flex-grow: 1;
+        height: 100%;
     }
     .navigation{
         width: 100%;
@@ -214,6 +216,7 @@
     .logo{
         grid-column: 1/3;
         margin-top: em(70);
+        max-width: 100%;
     }
 
     .cennik_cont{
@@ -236,7 +239,7 @@
 
 
     .wraper{
-        width: 100vw;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -359,6 +362,7 @@
         .otvaracie_hodiny{
             width: 100%;
             justify-self: center;
+            display: inline-block;
 
         }
         .hodiny{
@@ -366,16 +370,19 @@
         }
         
         img{
-            width: 50%;
+            width: 100%;
             height: 50%;
+            display: inline-block;
             }
         .card {
             line-height: 1.2;
             font-size: em(16);
             }
         .container{
+            flex-direction: column;
             width: 82%;
             height: 100%;
+
 
             }
         
@@ -385,15 +392,35 @@
 }
     
     
+@media (max-width:500px){
 
+    .container{
+        display: inline-block;
+    }
+
+}
 
 @media (max-width: 320px){
+
+    body{
+        font-size: 90%;
+    }
+
+    h1{
+        font-size: em(25);
+    }
+    .descr{
+        h1{
+            font-size: em(25);
+        }
+    }
     .hodiny{
         width: 80%;
         margin: 0 em(17) 0 0;
     }
     .cennik_cont{
-        padding: em(5) 0;   
+        padding: em(5) 0; 
+        max-width: 98%;  
         
         p{
             padding-right: em(22);
